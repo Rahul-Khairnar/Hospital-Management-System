@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="Hospital" table="Patients_actual">  
+    <id name="iD">  
+     <generator class="assigned"></generator>  
+    </id>  
+     <property name="fname" type = "string" column = "First_Name"></property>
+     <property name="lname" type = "string" column = "Last_Name"></property>
+     <property name="aadhar" type = "double" column = "Aadhar_No"></property>
+     <property name="contact_num" type = "double" column="Contact_Num"></property>
+     <property name="email" type = "string" column = "Email"></property>
+     <property name="add" type = "string" column = "Address"></property>  
+     <property name="pin" type = "double" column = "Pincode"></property>  
+     <property name="admitted" type = "string" column = "Admit_Date"></property> 
+     <property name="category_1" type = "string" column = "Category_1"></property> 
+     <property name="category_2" type = "string" column = "Category_2"></property> 
+     <property name="category_3" type = "string" column = "Category_3"></property> 
+     <property name="category_4" type = "string" column = "Category_4"></property> 
+     <property name="category_5" type = "string" column = "Category_5"></property>
+     <property name="image" type = "binary" column = "Patient_Image"></property>  
+            
+  </class>  
+            
+ </hibernate-mapping> 
