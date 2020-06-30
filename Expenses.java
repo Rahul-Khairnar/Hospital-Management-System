@@ -75,11 +75,11 @@ class Expenses extends JFrame{
 			String end = "Dicharged on: "+admitted;
 			String NoOfDays = "No of Days Admitted: "+"10";
 			String Contact = "Contact Number: ";
-			String Room = "Room Rent ----------------------- Rs.100000";
-			String Medicines = "Medicine Cost ------------------- Rs.100000";
-			String Food = "Food Cost ------------------------- Rs.100000";
-			String Other = "Other Expenses ----------------- Rs.100000";
-			String Total = "Total -------------------------------- Rs. 500000";
+			String Room = "Room Rent ----------------------- Rs.xxxxxxx";
+			String Medicines = "Medicine Cost ------------------- Rs.xxxxxxx";
+			String Food = "Food Cost ------------------------- Rs.xxxxxxx";
+			String Other = "Other Expenses ----------------- Rs.xxxxxxx";
+			String Total = "Total -------------------------------- Rs.xxxxxxx";
 			String Illness = "Problems Reported: ";
 
 
@@ -96,10 +96,10 @@ class Expenses extends JFrame{
 				PatientId = PatientId + h.getiD();
 				AadharNo = AadharNo + h.getaadhar();
 				Contact = Contact + h.getcontact_num();
-				Illness = Illness + h.getcategory_1()+",  "+h.getcategory_2()+", "+h.getcategory_3()+", "+h.getcategory_4()+", "+h.getcategory_5();
+				Illness = Illness + "Category 1: "+h.getcategory_1()+", Category 2: "+h.getcategory_2()+", Category 3: "+h.getcategory_3()+", Category 4: "+h.getcategory_4()+", Category 5: "+h.getcategory_5();
 				Start = Start + h.getadmitted();
 
-				String str = Heading+"\n\n    "+Name+"\n\n    "+PatientId+"            "+AadharNo+"          "+Contact+"\n\n    "+Illness+"\n    "+Start+"\n    "+end+"\n    "+NoOfDays+"\n\n    "+Room+"\n    "+Medicines+"\n    "+Food+"\n    "+Other+"\n\n    "+Total;
+				String str = Heading+"\n\n    "+Name+"\n\n    "+PatientId+"            "+AadharNo+"          "+Contact+"\n\n    "+Illness+"\n\n\n    "+Start+"\n    "+end+"\n\n    "+Room+"\n    "+Medicines+"\n    "+Food+"\n    "+Other+"\n\n    "+Total;
 				taExpenses.setText("");
 				taExpenses.setText(str);
 				}else{System.out.println("Record doesnot exist!");
